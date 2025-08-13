@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Shield, Music, GameController2, Users, MessageSquare, Bell, BarChart3, Settings, Crown, Zap, Heart, Star, Moon, Sparkles, ChevronDown, ChevronUp, Terminal, Copy, Check } from 'lucide-react';
+import { Shield, Music, Gamepad2, Users, MessageSquare, Bell, BarChart3, Settings, Crown, Zap, Heart, Star, Moon, Sparkles, ChevronDown, ChevronUp, Terminal, Copy, Check } from 'lucide-react';
 
 const Features = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -68,7 +68,7 @@ const Features = () => {
       ]
     },
     {
-      icon: GameController2,
+      icon: Gamepad2,
       title: 'Interactive Games & Fun',
       description: 'Engaging mini-games, trivia contests, economy system, and entertainment features to boost community interaction and engagement.',
       gradient: 'from-green-400 via-emerald-400 to-teal-500',
