@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-dark-primary text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-dark-primary;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-purple-500/30 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-purple-500/50;
+}
+
+/* Selection */
+::selection {
+  @apply bg-purple-500/30 text-white;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus styles */
+*:focus {
+  @apply outline-none;
+}
+
+/* Custom gradient text */
+.gradient-text {
+  @apply bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent;
+}
+
+/* Dark theme variables */
+:root {
+  --dark-primary: #0a0a0f;
+  --dark-secondary: #1a1a2e;
+  --dark-card: #16213e;
+}
+
+.bg-dark-primary {
+  background-color: var(--dark-primary);
+}
+
+.bg-dark-secondary {
+  background-color: var(--dark-secondary);
+}
+
+.bg-dark-card {
+  background-color: var(--dark-card);
+}
